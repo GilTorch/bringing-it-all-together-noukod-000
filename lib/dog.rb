@@ -8,5 +8,8 @@ class Dog
     @breed=breed
   end
 
+  def self.create_table 
+    DB[:conn].execute("CREATE TABLE IF EXISTS dog(id INTEGER PRIMARY KEY,name TEXT,breed TEXT)")
+  end
 
 end
