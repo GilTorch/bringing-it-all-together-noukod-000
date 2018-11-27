@@ -38,6 +38,7 @@ class Dog
       WHERE id=?
     SQL
     row=DB[:conn].execute(sql,id)
+    binding.pry
     Dog.new(id:row[0][0],name:row[0][1],breed:row[0][2])
   end
 
