@@ -32,4 +32,7 @@ class Dog
     dog.save
   end
 
+  def self.find_by_id 
+  end
+
 end
